@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet" />
+		<title>Sign-Up</title>
+	</head>
+	<body>
+		<section class="body-filter"></section>
+		<section class="main-text-content">
+			<h1 class="main-message">Be part of our initiative!</h1>
+			<p class="sub-message">
+				By signing up to be a code mentor, you're helping programers all
+				over the world learn to code. Any projects you create will be
+				shared with all of our users in order to facilitate
+				collaboration and build community. See more about our goals in
+				our <a class="sub-message" href="">mission statement.</a>
+			</p>
+		</section>
+		<section class="form-container">
+			<section class="gold-member">
+				Become a gold member starting at $9.99/month!
+			</section>
+			<div class="form-box">
+				<form id="sign-up-form">
+					<input
+						type="text"
+						id="first-name"
+						name="first-name"
+						placeholder="First Name"
+						required /><br />
+					<input
+						type="text"
+						id="last-name"
+						name="last-name"
+						placeholder="Last Name"
+						required /><br />
+					<input
+						type="email"
+						id="email"
+						name="email"
+						autocomplete="off"
+						placeholder="email@example.com" /><br />
+					<input
+						type="password"
+						id="pwd"
+						name="pwd"
+						placeholder="Password"
+						oninput="checkPasswordRequirements(this.value)" /><br />
+					<input type="submit" value="Sign up!" id="submit-button" />
+					<section id="password-requirements">
+						<p class="req-text">Password must contain:</p>
+						<ul class="req-text">
+							<li>8-32 characters</li>
+							<li>At least 1 uppercase and lowercase letter</li>
+							<li>At least 1 number</li>
+							<li>At least 1 special character</li>
+						</ul>
+					</section>
+				</form>
+			</div>
+			<script src="app.js"></script>
+		</section>
+	</body>
+</html>
